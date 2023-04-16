@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="ex1 parent">
+            <div class="child_header">
+                <p>Exercise 1</p>
+            </div>
+            <div id="x1p" class="l_child bigFont">Hello world!</div>
+            <div id="x1bt" class="r_child bigFont">Hover over me!</div>
+        </div>
+        <div class="ex2 parent">
+            <div class="child_header">
+                <p>Exercise 2A</p>
+            </div>
+            <div id="x2bx" class="l_child " style="background-color: blue;"></div>
+            <div id="x2bt" class="r_child bigFont">Click Me!</div>
+        </div>
+        <div id="ex2b" class="parent">
+            <div class="child_header">
+                <p>Exercise 2B</p>
+            </div>
+            <div id="x2bbx" class="l_child" style="background-color: blue;"></div>
+            <div id="x2bbt" class="r_child bigFont">Click Me!</div>
+        </div>
+
+        <div class="ex3 parent">
+            <div class="child_header">
+                <p>Exercise 3</p>
+            </div>
+            <div id="x3ImgDiv" class="l_child">
+                <img id="x3Img" src="./img/panda.jpeg" style="width: 100%;" alt="">
+            </div>
+            <div id="opt" class="r_child util_flex">
+                <div class="util_flex_child">
+                    <label for="x3Select"></label>
+                    <select name="x3Select" id="x3Animal">
+                        <option id="panda.jpeg" value="panda">Panda</option>
+                        <option id="Cat.jpg" value="Cat">Cat</option>
+                        <option id="zebra.jpeg" value="Zebra">Zebra</option>
+                        <option id="dog.jpeg" value="Dog">Dog</option>
+                        <option id="cub.jpeg" value="Cub">Cub</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="x4 parent">
+            <div class="child_header">
+                <p>Exercise 4</p>
+            </div>
+            <div class="x4Form l_child util_flex">
+                <div class="util_flex_child">
+                    <form name="form">
+                        <select name="font_family" id="font_family" ()">
+                            <option value="Arial" selected>Arial</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Courier New">Courier New</option>
+                            <option value="Sans Sarif">sans Sarif</option>
+                        </select>
+                        <select name="font_size" id="font_size">
+                            <option value="8pt">8pt</option>
+                            <option value="10pt">10pt</option>
+                            <option value="12pt" selected>12pt</option>
+                            <option value="14pt">14pt</option>
+                            <option value="16pt">16pt</option>
+                            <option value="16pt">20pt</option>
+                            <option value="16pt">24pt</option>
+                            <option value="16pt">28pt</option>
+                            <option value="16pt">30pt</option>
+                            <option value="16pt">34pt</option>
+                            <option value="16pt">38pt</option>
+                            <option value="16pt">42pt</option>
+                        </select>
+                        <br>
+                        <label>Italic <input type="checkbox" name="font_italic" id="font_italic" ()"></label>
+                        <br>
+                        <label>Bold <input type="checkbox" name="font_bold" id="font_bold" ()"></label>
+                        <br>
+                        <label>Underline <input type="checkbox" name="font_underline" id="font_underline"></label>
+                    </form>
+                </div>
+            </div>
+            <div class="r_child">
+                <textarea name="" id="ex4Div" cols="100" rows="50"
+                    placeholder="Write Something.............">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, incidunt ab a minus alias ea, amet placeat harum, eaque atque reiciendis aliquam odio! Voluptate nulla exercitationem harum, voluptatem nobis pariatur?</textarea>
+            </div>
+        </div>
+        <div class="ex5">
+            <div class="child_header">
+                <p>Exercise 5</p>
+            </div>
+            <div class="whole_class">
+                <div class="centerClass">
+                    <form name="pw">
+                        <table>
+                            <tr>
+                                <td>Password (min 6 characters):</td>
+                                <td><input type="password" name="password1" id="password1" size="10"
+                                        placeholder="Password" onkeyup="checkPassword()"></td>
+                                <td>
+                                    <div id="pw1_check" class="err"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Repeat password:</td>
+                                <td><input type="password" name="password2" id="password2" size="10"
+                                        placeholder="Password" onkeyup="checkPassword()"></td>
+                                <td>
+                                    <div id="pw2_check" class="err"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <input type="submit" value="Submit" id="ex5SubmitBtn" />
+                </div>
+            </div>
+        </div>
+
+        <div class="parent ex6">
+            <div class="child_header">
+                <p>Exercise 6</p>
+            </div>
+            <div class=" l_child panda">
+                <div class="whatPanda x6lChild">
+                    <p>
+                        The giant panda is a bear species endemic to China. It is characterised by its bold
+                        black-and-white
+                        coat
+                        and rotund body. The name "giant panda" is sometimes used to distinguish it from the red panda,
+                        a
+                        neighboring musteloid.
+                    </p>
+                </div>
+                <div class="whyPandas x6lChild">
+                    <p>
+                        Giant pandas help to keep their mountain forests healthy by spreading seeds in their droppings,
+                        which
+                        helps vegetation to thrive. The Giant panda's forested habitat is also important for local
+                        people
+                        for
+                        food, income and fuel for cooking and heating.
+                    </p>
+                </div>
+                <div class="wherePandaFrom x6lChild">
+                    <p>
+                        Pandas are native to China and their origin dates back millions of years. They are part of the
+                        bear
+                        family and were once classified as raccoons. Pandas were first described by a French naturalist
+                        in
+                        1869
+                        and have since become an endangered species due to habitat loss and other human factors.
+                    </p>
+                </div>
+            </div>
+            <div class="r_child util_flex">
+                <div class="util_flex_child">
+                    <button class="x6bt" id="0">
+                        What are pandas?
+                    </button>
+                    <button class="x6bt" id="1">
+                        Why Pandas are important?
+                    </button>
+                    <button class="x6bt" id="2">
+                        Origin Of pandas.
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="parent ex7">
+            <div class="child_header">
+                <p>Exercise 7</p>
+            </div>
+            <div class="l_child util_flex">
+                <ol class="util_flex_child" id="songList">
+                    <li>♫ I want it that way,
+                        By -BackstreetBoy
+                    </li>
+                </ol>
+            </div>
+            <div class="r_child util_flex">
+                <div class="util_flex_child ">
+
+                    <ul style="list-style: none;">
+                        <label for="Song_name">Enter the song name: </label>
+                        <li><input id="song_name" type="text" name="Song_name"></li>
+                        <label for="Artist_name">Enter the Artist name: </label>
+                        <li><input id="artist_name" type="text" name="artist_name"></li>
+                        <input type="submit" name="subSong" id="songSub">
+                        <li>Remove song ↓ </li>
+                        <li><label for="subsong">Enter the song number to remove: </label></li>
+                        <input type="number" name="subSong" id="remSongNo">
+                        <input type="submit" id="remSong">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class=" ex8 parent">
+            <div class="child_header">
+                <p>Exercise 8</p>
+            </div>
+            <div class="l_child" id="colors">
+
+            </div>
+            <div class="r_child" id="selected">
+
+            </div>
+        </div>
+        <div class="ex9 whole_class ">
+            <div class="child_header">
+                <p>Exercise 9</p>
+            </div>
+            <div id="map" class="whole_class">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+<script src="./index.js"></script>
+
+</html>
